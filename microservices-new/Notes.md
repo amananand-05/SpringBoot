@@ -30,10 +30,10 @@
 
     Creds:
 
-    uname: aman
-    pass: eA8LpYdwkMnrGbd
+    uname: dummy_username
+    pass: dummy_password
 
-    spring.data.mongodb.uri=mongodb+srv://aman:eA8LpYdwkMnrGbd@cluster0.tngem.mongodb.net/spring_boot_db?retryWrites=true&w=majority&appName=Cluster0
+    spring.data.mongodb.uri=mongodb+srv://dummy_username:dummy_password@cluster0.tngem.mongodb.net/spring_boot_db?retryWrites=true&w=majority&appName=Cluster0
 
 --- 
 
