@@ -4,6 +4,23 @@ docker command
     docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=root123 -e MYSQL_DATABASE=mydb -p 3306:3306 -d mysql
     docker ps
     docker exec -it mysql-container mysql -u root -p
+
+    # if you want to do a custom mount 
+    docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=root \
+    --mount type=bind,source=/path/to/my.cnf,target=/etc/mysql/my.cnf \
+    -v /path/to/host/directory:/var/lib/mysql \
+    -p 3306:3306 -d mysql:latest
+
+
+    # inspect command for container
+    docker inspect mysql-container
+    
+    # inspect command for an image
+    docker inspect mysql:latest
+
+
+
+
 --- 
     like this you can find content froma an command output
     =============
