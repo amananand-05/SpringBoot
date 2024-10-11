@@ -4,6 +4,17 @@ docker command
     docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=root123 -e MYSQL_DATABASE=mydb -p 3306:3306 -d mysql
     docker ps
     docker exec -it mysql-container mysql -u root -p
+--- 
+    like this you can find content froma an command output
+    =============
+    docker inspect mysql-container | grep [options] "mount"
+    options = -n for line numbers
+    options = -c for occurance count 
+    options = -i for ignaore search content case
+
+    from a file
+    =============
+    grep [options] "cyx" aFileName.txt
 
 ---
 
